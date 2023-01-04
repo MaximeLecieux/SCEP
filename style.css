@@ -9,11 +9,25 @@ body{
 
 h1{
     color: white;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    color: #E84644;
+}
+
+h3{
+    text-align: center;
 }
 
 p{
-    text-align: center;
     line-height: 1.5em;
+}
+
+.section{
+    background: #C0C0C0;
+    padding: 10px;
 }
 
 /** Header **/
@@ -23,27 +37,40 @@ header {
     align-items: center;
 }
 
+/** Second section **/
+
+.card{
+    margin: 10px;
+}
+
+/**Fourth section **/
+form{
+    border: solid 2px black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
 @media (max-width: 576px) {
     /** Header phone version **/
     h1{
         font-size: 6rem;
         letter-spacing: 3rem;
-        padding: 0;
-        margin: 0;
     }
 
     .logo{
         width: 200px;
         height: 200px;
+    }
+    .section{
+        margin-top: 5px;
     }
 }
 
 @media (min-width: 577px){
+    /** Header tablet version **/
     h1{
         font-size: 6rem;
         letter-spacing: 3rem;
-        padding: 0;
-        margin: 0;
     }
 
     .logo{
@@ -51,18 +78,40 @@ header {
         height: 200px;
     }
 
+    /** section tablet version **/
+    .section{
+        border: solid 5px grey;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    /** card tablet version **/
+    .card{
+        margin: 20px;
+    }
 }
 
 @media (min-width: 992px){
+    /** Header laptop version **/
     h1{
         font-size: 6rem;
         letter-spacing: 3rem;
-        padding: 0;
-        margin: 0;
     }
 
     .logo{
         width: 200px;
         height: 200px;
+    }
+
+    /** section laptop version **/
+    .section{
+        border: solid 5px grey;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /** Card laptop version **/
+    .card{
+        margin: 30px;
     }
 }
