@@ -20,7 +20,10 @@ p{
     line-height: 1.5em;
 }
 
-.section{
+article{
+    background: lightgrey;
+}
+section{
     background: #C0C0C0;
     padding: 10px;
 }
@@ -64,17 +67,17 @@ footer{
 @media (max-width: 576px) {
     /** Header phone version **/
     h1{
-        font-size: 6rem;
-        letter-spacing: 3rem;
+        font-size: 4rem;
+        letter-spacing: 1.5rem;
     }
 
     .logo{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
     /** Section phone version **/
-    .section{
+    section{
         margin-top: 5px;
         margin-bottom: 5px;
 
@@ -99,7 +102,7 @@ footer{
     /** Header tablet version **/
     h1{
         font-size: 6rem;
-        letter-spacing: 3rem;
+        letter-spacing: 2rem;
     }
 
     .logo{
@@ -108,7 +111,7 @@ footer{
     }
 
     /** Section tablet version **/
-    .section{
+    section{
         border: solid 5px grey;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -137,17 +140,17 @@ footer{
 @media (min-width: 992px){
     /** Header laptop version **/
     h1{
-        font-size: 6rem;
+        font-size: 8rem;
         letter-spacing: 3rem;
     }
 
     .logo{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
 
     /** Section laptop version **/
-    .section{
+    section{
         border: solid 5px grey;
         margin-top: 20px;
         margin-bottom: 20px;
