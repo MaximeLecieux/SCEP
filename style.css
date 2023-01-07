@@ -14,7 +14,7 @@ h1{
 }
 
 h2{
-    color: #E84644;
+    color: #1F80C4;
 }
 
 h3{
@@ -50,6 +50,10 @@ form{
     padding: 5px;
 }
 
+.spanPrice{
+    font-size: 4rem;
+}
+
 @media (max-width: 576px) {
     /** Header phone version **/
     h1{
@@ -61,8 +65,12 @@ form{
         width: 200px;
         height: 200px;
     }
+
+    /** Section phone version **/
     .section{
         margin-top: 5px;
+        margin-bottom: 5px;
+
     }
 }
 
@@ -78,11 +86,11 @@ form{
         height: 200px;
     }
 
-    /** section tablet version **/
+    /** Section tablet version **/
     .section{
         border: solid 5px grey;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     /** card tablet version **/
@@ -103,11 +111,11 @@ form{
         height: 200px;
     }
 
-    /** section laptop version **/
+    /** Section laptop version **/
     .section{
         border: solid 5px grey;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     /** Card laptop version **/
