@@ -5,20 +5,15 @@ html{
 
 body{
     margin: 0;
+    padding: 0;
 }
 
 h1{
     color: white;
-    padding: 0;
-    margin: 0;
 }
 
 h2{
     color: #1F80C4;
-}
-
-h3{
-    text-align: center;
 }
 
 p{
@@ -54,6 +49,18 @@ form{
     font-size: 4rem;
 }
 
+/** Footer **/
+footer{
+    background: black;
+}
+
+.navFooter{
+    list-style-type: none;
+}
+
+.navFooter > li{
+    display: inline-block;
+}
 @media (max-width: 576px) {
     /** Header phone version **/
     h1{
@@ -71,6 +78,20 @@ form{
         margin-top: 5px;
         margin-bottom: 5px;
 
+    }
+
+    /** Footer phone version **/
+    .spanFooter{
+        font-size: 1.5rem;
+    }
+
+    .navFooter{
+        padding: 25px;
+    }
+
+    .navFooter > li{
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -97,6 +118,20 @@ form{
     .card{
         margin: 20px;
     }
+
+    /** Footer tablet version **/
+    .spanFooter{
+        font-size: 2rem;
+    }
+    
+    .navFooter{
+        padding: 50px;
+    }
+
+    .navFooter > li{
+        height: 65px;
+        width: 65px;
+    }
 }
 
 @media (min-width: 992px){
@@ -121,5 +156,19 @@ form{
     /** Card laptop version **/
     .card{
         margin: 30px;
+    }
+
+    /** Footer laptop version **/
+    .spanFooter{
+        font-size: 2.5rem;
+    }
+    
+    .navFooter{
+        padding: 65px;
+    }
+
+    .navFooter > li{
+        height: 75px;
+        width: 75px;
     }
 }
