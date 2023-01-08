@@ -30,13 +30,80 @@
             <article class="container text-center">
                 <h2>Les évènements</h2>
                 <section class="section">
-                    <h3>Defqon.1</h3>
+                    <h3>DEFQON.1</h3>
                     <div class="row">
-                        <div>
-                            <img src="img/defqon1.jpg" alt="Defqon1">
+                        <div class="col-12 col-sm-6">
+                            <img src="img/defqon1.jpg" alt="Defqon1" class="img-fluid">
+                        </div>
+                        <div class="presentationEvent col-12 col-sm-6">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sapiente maxime veritatis rem voluptas alias nihil ratione consequatur neque pariatur, porro esse possimus, voluptatum inventore. Autem officia minus harum dignissimos!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt quod quisquam non voluptatibus unde, odit aliquid ratione accusamus fugiat placeat, vel, eveniet dolores. Ducimus quod tempora delectus quisquam exercitationem!
+                            </p>
                         </div>
                     </div>
-                </section>    
+                    <button type="button" class="btn btn-success m-2" data-bs-toggle="modal" data-bs-target="#participation">Je souhaite y participer</button>
+                </section>
+                <section class="section">
+                    <h3>THUNDERDOME</h3>
+                    <div class="row">
+                        <div class="presentationEvent col-12 col-sm-6">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sapiente maxime veritatis rem voluptas alias nihil ratione consequatur neque pariatur, porro esse possimus, voluptatum inventore. Autem officia minus harum dignissimos!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt quod quisquam non voluptatibus unde, odit aliquid ratione accusamus fugiat placeat, vel, eveniet dolores. Ducimus quod tempora delectus quisquam exercitationem!
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <img src="img/thunderdome.jpg" alt="Thunderdome" class="img-fluid">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success m-2" data-bs-toggle="modal" data-bs-target="#participation">Je souhaite y participer</button>
+                </section>
+                <section class="section">
+                    <h3>MYSTERYLAND</h3>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <img src="img/mysteryland.jpg" alt="Mysteryland" class="img-fluid">
+                        </div>
+                        <div class="presentationEvent col-12 col-sm-6">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sapiente maxime veritatis rem voluptas alias nihil ratione consequatur neque pariatur, porro esse possimus, voluptatum inventore. Autem officia minus harum dignissimos!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt quod quisquam non voluptatibus unde, odit aliquid ratione accusamus fugiat placeat, vel, eveniet dolores. Ducimus quod tempora delectus quisquam exercitationem!
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success m-2" data-bs-toggle="modal" data-bs-target="#participation">Je souhaite y participer</button>
+                </section>
+                <section class="section">
+                    <h3>RAMPAGE</h3>
+                    <div class="row">
+                        <div class="presentationEvent col-12 col-sm-6">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sapiente maxime veritatis rem voluptas alias nihil ratione consequatur neque pariatur, porro esse possimus, voluptatum inventore. Autem officia minus harum dignissimos!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt quod quisquam non voluptatibus unde, odit aliquid ratione accusamus fugiat placeat, vel, eveniet dolores. Ducimus quod tempora delectus quisquam exercitationem!
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <img src="img/rampage.jpg" alt="Rampage" class="img-fluid">
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success m-2" data-bs-toggle="modal" data-bs-target="#participation">Je souhaite y participer</button>
+                </section>
+                <section class="section">
+                    <h3>La Summer Party SCEP</h3>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <img src="img/summerparty.jpg" alt="Summer Party" class="img-fluid">
+                        </div>
+                        <div class="presentationEvent col-12 col-sm-6">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi sapiente maxime veritatis rem voluptas alias nihil ratione consequatur neque pariatur, porro esse possimus, voluptatum inventore. Autem officia minus harum dignissimos!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt quod quisquam non voluptatibus unde, odit aliquid ratione accusamus fugiat placeat, vel, eveniet dolores. Ducimus quod tempora delectus quisquam exercitationem!
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-danger m-2"><a href="#" class="nav-link">En savoir plus</a></button>
+                </section>
             </article>
         </main>
         <footer class="text-center">
@@ -52,6 +119,52 @@
                 </ul>    
             </div>
         </footer>
+        <div class="modal fade" id="participation" tabindex="-1" role="dialog" aria-labelledby="participationTitle" aria-hidden="true"> <!--Modal d'inscription-->
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="participationTitle">Participer à un évènement</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post" action="script.php"> <!--Le script n'existe pas-->                          
+                            <div class="mb-3">
+                                <label for="namePerson" class="form-label">Votre nom</label>
+                                <input type="texte" class="form-control" id="namePerson" name="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="firstNamePerson" class="form-label">Votre prénom</label>
+                                <input type="texte" class="form-control" id="firstNamePerson" name="firstname">
+                            </div>
+                            <div class="mb-3">
+                                <label for="birthdayPerson" class="form-label">Votre date de naissance</label>
+                                <input type="date" class="form-control" id="birthdayPerson" name="birthday">
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailPerson" class="form-label">Votre mail</label>
+                                <input type="email" class="form-control" id="emailPerson">
+                            </div>
+                            <div class="mb-3">
+                                <label for="choiceEvent" class="form-label">Je souhaite participer à l'évènement :</label>
+                                <select class="form-select" aria-label="Select" id="choiceEvent">
+                                    <option selected>Defqon.1</option>
+                                    <option value="1">Thunderdome</option>
+                                    <option value="2">Mysteryland</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id mauris ac sem laoreet convallis.
+                            </p>
+                     </form>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-success">Participer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 </html> 
