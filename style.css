@@ -66,7 +66,12 @@ footer{
     display: inline-block;
 }
 
-
+/** img gif summerparty.html **/
+.gifCard{
+    width: 250px;
+    height: 150px;
+    text-align: center;
+}
 
 @media (max-width: 576px) {
     /** Header phone version **/
