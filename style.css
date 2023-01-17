@@ -70,7 +70,6 @@ footer{
 .gifCard{
     width: 250px;
     height: 150px;
-    text-align: center;
 }
 
 @media (max-width: 576px) {
