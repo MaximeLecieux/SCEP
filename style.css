@@ -16,15 +16,16 @@ h2{
     color: #1F80C4;
 }
 
+h3{
+    color: #E84644;
+}
+
 p{
     line-height: 1.5em;
     padding: 10px;
     font-size: 1.2rem;
 }
 
-article{
-    background: #C4C4C4;
-}
 section{
     background: #F2F2F2;
     padding: 10px;
@@ -50,7 +51,7 @@ form{
 }
 
 .spanPrice{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 /** Footer **/
@@ -125,7 +126,7 @@ footer{
 
     /** Section tablet version **/
     section{
-        border: solid 5px grey;
+        border: solid 5px #E84644;
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -166,10 +167,10 @@ footer{
         width: 250px;
         height: 250px;
     }
-
+    
     /** Section laptop version **/
     section{
-        border: solid 5px grey;
+        border: solid 5px #E84644;
         margin-top: 20px;
         margin-bottom: 20px;
     }
