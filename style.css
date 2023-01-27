@@ -6,10 +6,11 @@ html{
 body{
     margin: 0;
     padding: 0;
+    background: #ebebeb;
 }
 
 h1{
-    color: white;
+    visibility: hidden;
 }
 
 h2{
@@ -27,14 +28,7 @@ p{
 }
 
 section{
-    background: #F2F2F2;
     padding: 10px;
-}
-
-/** Header **/
-header {
-    background: black;
-    text-align: center;
 }
 
 /** Second section index.html **/
@@ -76,20 +70,21 @@ footer{
 @media (max-width: 576px) {
     /** Header phone version **/
     h1{
-        font-size: 4rem;
-        letter-spacing: 1.5rem;
+        font-size: 1rem;
     }
 
     .logo{
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
+    }
+    .welcome{
+        display: none;
     }
 
     /** Section phone version **/
     section{
         margin-top: 5px;
         margin-bottom: 5px;
-
     }
 
     /** Footer phone version **/
@@ -106,7 +101,7 @@ footer{
         width: 50px;
     }
 
-    /** texte présentation phone version events.html **/
+    /** text presentation phone version events.html **/
     .presentationEvent{
         padding: 10px;
     }
@@ -115,18 +110,27 @@ footer{
 @media (min-width: 577px){
     /** Header tablet version **/
     h1{
-        font-size: 6rem;
-        letter-spacing: 2rem;
+        font-size: 3rem;
     }
 
     .logo{
-        width: 200px;
-        height: 200px;
+        width: 125px;
+        height: 125px;
     }
-
+    /** Welcome tablet version **/
+    .welcome{
+        height: 75vh;
+        text-align: center;
+        background-image: url(img/background.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .welcomeLogo{
+        width:400px;
+        height: 400px;
+    }
     /** Section tablet version **/
     section{
-        border: solid 5px #E84644;
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -150,7 +154,7 @@ footer{
         width: 65px;
     }
 
-    /** texte présentation tablet version events.html **/
+    /** text presentation tablet version events.html **/
     .presentationEvent{
         padding: none;
     }
@@ -159,18 +163,27 @@ footer{
 @media (min-width: 992px){
     /** Header laptop version **/
     h1{
-        font-size: 8rem;
-        letter-spacing: 3rem;
+        font-size: 6rem;
     }
 
     .logo{
-        width: 250px;
-        height: 250px;
+        width: 125px;
+        height: 125px;
     }
-    
+    /** Welcome laptop version **/
+    .welcome{
+        height: 100vh;
+        text-align: center;
+        background-image: url(img/background.jpg);
+        background-attachment: fixed;
+    }
+    .welcomeLogo{
+        width:650px;
+        height: 650px;
+    }
+
     /** Section laptop version **/
     section{
-        border: solid 5px #E84644;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -187,6 +200,7 @@ footer{
     
     .navFooter{
         padding: 65px;
+        margin: 0;
     }
 
     .navFooter > li{
@@ -194,7 +208,7 @@ footer{
         width: 75px;
     }
 
-    /** texte présentation laptop version events.html **/
+    /** text presentation laptop version events.html **/
     .presentationEvent{
         padding: 50px;
     }

@@ -8,23 +8,27 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-dark navbar-expand-sm">
-                <a class="nav-link disabled"></a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span>Menu</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-                    </svg>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a href="index.html" class="nav-link">L'association</a></li>
-                        <li class="nav-item"><a href="events.html" class="nav-link">Évènements</a></li>
-                    </ul>
-                </div>
+            <nav class="nav navbar navbar-dark navbar-expand-lg">
+                <a href="index.html" class="navbar-brand"><img src="img/logo.png" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="events.html">Les évènements</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
             </nav>
-            <img class="logo" src="img/logo.png" alt="Logo">
-            <h1>SCEP</h1>
         </header>
         <main>
             <article class="container text-center">
