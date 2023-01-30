@@ -119,15 +119,12 @@ footer{
     }
     /** Welcome tablet version **/
     .welcome{
-        height: 75vh;
-        text-align: center;
-        background-image: url(img/background.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        padding-left: 0;
+        padding-right: 0;
     }
-    .welcomeLogo{
-        width:400px;
-        height: 400px;
+    .welcomeBackground{
+        width: 100%;
+        height: auto;
     }
     /** Section tablet version **/
     section{
@@ -172,14 +169,12 @@ footer{
     }
     /** Welcome laptop version **/
     .welcome{
-        height: 100vh;
-        text-align: center;
-        background-image: url(img/background.jpg);
-        background-attachment: fixed;
+        padding-left: 0;
+        padding-right: 0;
     }
-    .welcomeLogo{
-        width:650px;
-        height: 650px;
+    .welcomeBackground{
+        width: 100%;
+        height: auto;
     }
 
     /** Section laptop version **/
