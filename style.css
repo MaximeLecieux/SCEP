@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cabin&family=Josefin+Sans&display=swap');
+
 /** Base **/
 html{
     font-size: 16px;
@@ -6,7 +8,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background: #ebebeb;
+    background: #e9ecef;
 }
 
 h1{
@@ -15,35 +17,44 @@ h1{
 
 h2{
     color: #1F80C4;
+    font-family: 'Anton', sans-serif;
 }
 
 h3{
     color: #E84644;
+    font-family: 'Cabin', sans-serif;
 }
 
 p{
     line-height: 1.5em;
     padding: 10px;
     font-size: 1.2rem;
+    font-family: 'Josefin+Sans', sans-serif;
 }
 
 section{
     padding: 10px;
+    background: #f8f9fa;
 }
 
-/** Second section index.html **/
+/** Div Hidden events.html & summerparty.html **/
+.divHidden {
+    height: 150px;
+}
 
+/** Card model **/
 .card{
     margin: 10px;
 }
 
-/**Fourth section index.html **/
+/** Form model **/
 form{
     border: solid 2px black;
     border-radius: 10px;
     padding: 5px;
 }
 
+/**Form index.html **/
 .spanPrice{
     font-size: 3rem;
 }
@@ -68,10 +79,6 @@ footer{
 }
 
 @media (max-width: 576px) {
-    /** Header phone version **/
-    h1{
-        font-size: 1rem;
-    }
 
     .logo{
         width: 100px;
@@ -81,10 +88,15 @@ footer{
         display: none;
     }
 
+    /** Div Hidden **/
+    .divHidden {
+        height: 150px;
+    }
+
     /** Section phone version **/
     section{
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     /** Footer phone version **/
@@ -108,16 +120,12 @@ footer{
 }
 
 @media (min-width: 577px){
-    /** Header tablet version **/
-    h1{
-        font-size: 3rem;
-    }
 
     .logo{
         width: 125px;
         height: 125px;
     }
-    /** Welcome tablet version **/
+
     .welcome{
         padding-left: 0;
         padding-right: 0;
@@ -126,10 +134,15 @@ footer{
         width: 100%;
         height: auto;
     }
+    /** article tablet section **/ 
+    article{
+        margin: 10px;
+    }
+
     /** Section tablet version **/
     section{
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     /** card tablet version index.html **/
@@ -151,17 +164,13 @@ footer{
         width: 65px;
     }
 
-    /** text presentation tablet version events.html **/
+    /** presentation text tablet version events.html **/
     .presentationEvent{
         padding: none;
     }
 }
 
 @media (min-width: 992px){
-    /** Header laptop version **/
-    h1{
-        font-size: 6rem;
-    }
 
     .logo{
         width: 125px;
@@ -179,8 +188,8 @@ footer{
 
     /** Section laptop version **/
     section{
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 65px;
+        margin-bottom: 65px;
     }
 
     /** Card laptop version index.html **/
@@ -203,7 +212,7 @@ footer{
         width: 75px;
     }
 
-    /** text presentation laptop version events.html **/
+    /** presentation text laptop version events.html **/
     .presentationEvent{
         padding: 50px;
     }
